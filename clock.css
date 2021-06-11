@@ -1,0 +1,129 @@
+body{
+    text-align: center;
+    background: radial-gradient(circle,#125d98,black);
+}
+.clock{
+    background: radial-gradient(#125d98,black);
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 20px white;
+}
+.sec{
+    background: radial-gradient(black,red);
+    height: 235px;
+    line-height: 45px;
+    width: 8px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 240px;
+    top: 5px;
+    z-index: 3;
+    transform-origin: bottom;
+    animation: sec_anim 10s linear infinite;
+}
+.min{
+    background: radial-gradient(black,#f7fd04);
+    height: 225px;
+    line-height: 45px;
+    width: 13px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 237px;
+    top: -220px;
+    z-index: 2;
+    transform-origin: bottom;
+    animation: sec_anim 60s linear infinite;
+}
+.hr{
+    background: radial-gradient(black,rgb(117, 243, 44));
+    height: 200px;
+    line-height: 45px;
+    color: white;
+    width: 15px;
+    border-radius: 10px;
+    position: relative;
+    left: 236px;
+    top: -420px;
+    z-index: 1;
+    transform-origin: bottom;
+    animation: sec_anim 3600s linear infinite;
+}
+@keyframes sec_anim {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+@keyframes min_anim {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+@keyframes hr_anim {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 0;
+    color: white;
+    font-size: 4em;
+    position: relative;
+    text-shadow: 0 0 7px white;
+}
+.one{
+    top: -620px;
+    left: 120px;
+}
+.two{
+    top:-610px;
+    left: 185px;
+}
+.three{
+    top:-585px;
+    left: 210px;
+}
+.four{
+    top: -560px;
+    left: 183px;
+}
+.five{
+    top: -564px;
+    left: 110px;
+}
+.six{
+    top: -604px;
+    left: auto;
+}
+.seven{
+    top: -710px;
+    right: 110px;
+
+}
+.eight{
+    top: -860px;
+    left: -190px;
+}
+.nine{
+    top: -1030px;
+    left: -215px;
+}
+.ten{
+    top:-1200px;
+    left: -180px;
+}
+.eleven{
+    top: -1350px;
+    left: -110px;
+}
+.twelve{
+    left: auto;
+    top: -1460px; 
+}
+.stickers{
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    right: 10px;
+}
