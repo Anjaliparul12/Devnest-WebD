@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Calculator</title>
+<link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <h1><u><center>Calculator</center></u></h1>
+<div class="container">
+    <table border="3px" class="rounded" cellspacing="0">
+        <tr>
+            <td colspan="4" id="inputLabel">0</td>
+        </tr>
+        <tr>
+            <td colspan="3"><button onclick="push(this);">AC</button></td>
+            <td><button onclick="push(this);">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="push(this);">7</button></td>
+            <td><button onclick="push(this);">8</button></td>
+            <td><button onclick="push(this);">9</button></td>
+            <td><button onclick="push(this);">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="push(this);">4</button></td>
+            <td><button onclick="push(this);">5</button></td>
+            <td><button onclick="push(this);">6</button></td>
+            <td><button onclick="push(this);">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="push(this);">1</button></td>
+            <td><button onclick="push(this);">2</button></td>
+            <td><button onclick="push(this);">3</button></td>
+            <td><button onclick="push(this);">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="push(this);">0</button></td>
+            <td><button onclick="push(this);">.</button></td>
+            <td><button onclick="push(this);">=</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="calc.js"></script>
+</html>
