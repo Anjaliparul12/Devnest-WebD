@@ -1,0 +1,15 @@
+.main{
+    display:flex;
+    width:600px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 40px;
+}
+.main div{
+    width: 30px;
+    height:30px;
+    background: darkblue;
+}
+.main div:hover{
+    background-color: rgb(17, 4, 66);
+}
