@@ -12,11 +12,10 @@
   margin: 40px;
 }
 
-.heading{
+.heading {
   color: #005a8d;
   background-color: white;
   font-family: 'sans-serif,Arial';
-  margin-top:-50px;
   width: 350px;
   position: absolute;
   left: 440px;
