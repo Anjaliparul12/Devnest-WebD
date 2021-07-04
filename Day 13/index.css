@@ -1,0 +1,27 @@
+body{
+    background-image: url("quote.jpg");
+    
+}
+.card1
+{
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 8%;
+    box-shadow: 10px 10px 8px rgb(217, 235, 62);
+    background-color: #fff;
+}
+
+.card2
+{
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 5%;
+    box-shadow: 10px 10px 8px 10px rgb(217, 235, 62);
+    width: 30%;
+}
+.card-body{
+    margin: 5px 5px;
+    color: #fff;
+    font-weight: 100px
+}
+
