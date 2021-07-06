@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="container">
+        <header><center>Todo List</center></header>
+        <div class="inputfield">
+        <input type="text" class="text" placeholder="Add a new Todo">
+        <button><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+        <ul class="todolist">
+        <li>Complete Javascript<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        <li>Buy a smart watch<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        <li>learn Data Structure<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        <li>Practise coding<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        <li>Complete novel<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        <li>Clean my room<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+        <li>Wake up early<span><i class="fa fa-trash" aria-hidden="true"></i></span></li>
+    </ul>
+    <div class="footer"> <span>You have <span class="pendingTasks"></span> pending tasks</span> <button>Clear All</button></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
