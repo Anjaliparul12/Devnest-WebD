@@ -1,12 +1,11 @@
-const inputBox =document.querySelector(".inputfield input"); 
-const addBtn= document.querySelector(".inputfield button");
-const todoList = document.querySelector(".todolist");
-const deleteAllBtn = document.querySelector(".footer button");
+const inputBox =document.querySelector('.inputfield input'); 
+const addBtn= document.querySelector('.inputfield button');
+const todoList = document.querySelector('.todolist');
+const deleteAllBtn = document.querySelector('.footer button');
 
 inputBox.onkeyup = () =>{
-    let userDate = inputBox.value;
-    console.log(userDate);
-    if(userDate.trim() != 0){
+    let userData = inputBox.value;
+    if(userData.trim()!= 0){
         addBtn.classList.add("active");
     }
     else{
@@ -14,19 +13,22 @@ inputBox.onkeyup = () =>{
     }
 }
 
-addBtn.onclick = ()=>{ 
-    let dataIn = inputBox.value; 
-    let local = localStorage.getItem("New Todo");
-    if(local == null){
-      listArray = []; 
-    }else{
-      listArray = JSON.parse(getLocalStorageData);  
+showTasks();
+
+addBtn.onclick = () =>{
+    let userData = inputBox.value;
+    let getLocalStorage = localStorage.getItem("New Todo");
+    if(getLocalStorage == null){
+        listArr = [];
     }
-    listArray.push(dataIn); 
-    localStorage.setItem("New Todo", JSON.stringify(listArray)); 
-    showTasks(); 
-    addBtn.classList.remove("active");
+    else{
+        listArr = JSON.parse(getLocalStorage);
+    }
+    listArr.push(userData);
+    localStorage.setItem("New Todo", JSON.stringify(listArr));
+    showTasks();
 }
+
 function showTasks(){
     let getLocalStorage = localStorage.getItem("New Todo");
     if(getLocalStorage == null){
@@ -43,10 +45,9 @@ function showTasks(){
     }
     let newLiTag = '';
     listArr.forEach((element, index) => {
-        newLiTag += `<li> ${element} <span onclick="deleteTask(${index});" ><i class="fas fa-trash"></i></span></li>`;
+        newLiTag += `<li> ${element} <span onclick="deleteTask(${index});" ><i class="fa fa-trash"></i></span></li>`;
     });
     todoList.innerHTML = newLiTag;
-    console.log(todoList);
     inputBox.value = "";
 }
 
