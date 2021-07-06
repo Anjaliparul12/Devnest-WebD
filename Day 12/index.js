@@ -37,6 +37,9 @@ function showTasks(){
     else{
         listArr = JSON.parse(getLocalStorage);
     }
+    const pending = document.querySelector(".pendingTasks");
+    pending.textContent = listArr.length;
+
     if(listArr.length > 0){
         deleteAllBtn.classList.add("active");
     }
@@ -45,7 +48,7 @@ function showTasks(){
     }
     let newLiTag = '';
     listArr.forEach((element, index) => {
-        newLiTag += `<li> ${element} <span onclick="deleteTask(${index});" ><i class="fa fa-trash"></i></span></li>`;
+        newLiTag += `<li> ${element} <span onclick="deleteTask(${index})" ><i class="fa fa-trash"></i></span></li>`;
     });
     todoList.innerHTML = newLiTag;
     inputBox.value = "";
