@@ -5,9 +5,6 @@ let matches=0;
 let gameActive=true;
 
 for(let i=1; i<=16; i++){
-    let card=document.createElement("div");
-    card.classList.add("flip-card");
-
     let inner=document.createElement("div");
     inner.classList.add("flip-inner");
 
