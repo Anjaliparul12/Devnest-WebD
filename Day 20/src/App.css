@@ -1,0 +1,46 @@
+
+.App{
+  overflow-y: scroll;
+  overflow-x: hidden;
+    width: 500px;
+    height: 400px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 5px;
+    color:black;
+    box-shadow:3px 2px 9px -1px grey;
+    margin: auto;
+}
+.Card{
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 10px;
+width: 500px;
+height: 200px;
+margin: 2px;
+border-radius: 5px;
+box-shadow: 3px 1px 9px -1px grey;
+}
+
+.h1{
+  font-weight: bold;
+  margin:auto;
+  text-align: center;
+}
+h2{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+p{
+  padding-top: 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+button{
+  margin: 5px 0px;
+  padding: 10px;
+  background-color: white;
+  display: inline-block;
+}
