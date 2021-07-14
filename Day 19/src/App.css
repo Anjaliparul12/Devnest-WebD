@@ -1,19 +1,18 @@
-.container{
-  padding: "10px";
-  border: "2px solid black";
-  height: '50px';
-  width: '50px';
-  cursor: "pointer";
+.heading{
+ text-align: center;
+ font-size: larger;
+ margin-top: 100px;
 }
 section{
   display: flex;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 40px;
 }
 button{
   padding: 15px;
   border: 5px solid black;
   font-size: 30px;
   margin:2px;
+  cursor:pointer;
 }
 
