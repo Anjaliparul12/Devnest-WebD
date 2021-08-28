@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:lightgrey;
+}
+h1{
+  padding: 20px;
+}
+
+h2 {
+  padding: 10px;
+  margin: 20px;
+}
+
+
