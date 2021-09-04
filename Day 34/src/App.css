@@ -1,0 +1,25 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+button, input {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: aliceblue;
+  background-color: black;
+}
+h3 {
+  display: inline-block;
+  color: aliceblue;
+}
+body{
+  background:linear-gradient(145deg, #0c1011, #5e326b) no-repeat center fixed;
+}
