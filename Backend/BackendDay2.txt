@@ -1,0 +1,30 @@
+To list all Databases -
+
+=> \l
+To quit psql CLI -
+
+=> \q
+To check all the users -
+
+=> \du
+To create a Database -
+
+=> CREATE DATABASE {database_name};
+To delete a Database -
+
+=> DROP DATABASE {database_name};
+To connect with a Database -
+
+=> \c database_name
+To Create Table -
+
+=> CREATE TABLE table_name(
+	ID INT PRIMARY KEY SERIAL,
+	column_name1 data_type + constraints if any,
+	column_name2 data_type + constraints if any,
+	…,
+	…,
+	…
+	);
+To Delete Table -
+=> DROP TABLE table_name;

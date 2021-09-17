@@ -1,0 +1,31 @@
+> var fs=require
+undefined
+> var fs = require("fs");
+undefined
+> fs.mkdirSync('day5');
+undefined
+>                                    
+> fs.writeFileSync("day5/hello.txt","hello",(err)=>
+... {
+..... if(err){
+....... console.log(err);
+....... }
+..... });
+undefined
+> fs.appendFileSync("day5/hello.txt","append");
+undefined
+ 
+> fs.readFileSync("day5/hello.txt");
+<Buffer 68 65 6c 6c 6f 61 70 70 65 6e 64>
+>  fs.readFileSync("day5/hello.txt","utf-8");
+'helloappend'
+
+
+> fs.renameSync("day5/hello.txt","day5/hello2.txt");
+undefined
+> fs.unlinkSync("day5/hello2.txt");
+undefined
+> fs.unlinkSync("day5/hello.txt");   
+undefined
+
+> fs.rmdirSync('day5');

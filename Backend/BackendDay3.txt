@@ -1,0 +1,24 @@
+Command to subscribe
+
+=> SUBSCRIBE <channel>
+=> SUBSCRIBE devsnest
+PUBLISHER : who sends the message
+
+how to publish
+
+=> PUBLISH <channel> <message>
+=> PUBLISH devsnest hello
+Unsubscribe channel
+
+=> UNSUBSCRIBE <channel>
+=> UNSUBSCRIBE devsnest
+subscribe channel with specific pattern
+
+PSUBSCRIBE <pattern>
+To sub all channels starting with 'd'
+
+=> PSUBSCRIBE d*
+Unsubscribe all channel starting with 'd'
+
+PUNSUBSCRIBE <pattern>
+=> PUNSUBSCRIBE d*

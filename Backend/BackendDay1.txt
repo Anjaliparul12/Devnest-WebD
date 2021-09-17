@@ -1,0 +1,106 @@
+
+
+Redis is not a database. It just stores a big JSON object
+key-value pair with value being string
+
+1. To store Data in Redis -
+	SET key value
+    Eg - SET name Anjali
+	OK
+
+2. To get the value of some key
+	GET key
+   Eg - GET name
+	“Anjali”
+
+3. To delete the key-value pair
+	DEL key
+   Eg - DEL age
+	(integer) 1 
+
+4. To check if some key exists or not
+	EXISTS key
+   Eg - EXISTS name
+	(integer) 1	(If the key exists)
+	EXISTS surname
+	(integer) 0	(If the key doesn’t exists)
+
+5. To get all the keys
+	KEYS *
+    Eg - KEYS *
+	1.) “name”
+	2.) “age”
+
+6. To Delete all the keys all together
+	FLUSHALL
+    Eg - FLUSHALL
+	OK
+
+7. Know Expiry for the Keys
+	ttl key
+   Eg - ttl name
+	(integer) -2	(Expired key)
+	(integer) -1	(Key with no Expiry time)
+
+8. Set expiry of already present key
+	expire key time(in seconds)
+   Eg - expire name 20 
+
+9. Set expiry at the time of creating key
+	setex key time(in seconds) value
+   Eg - setex name 20 “Anjali” 
+
+10. ARRAYS IN REDIS : 
+   
+    a) LPUSH key element [elements] : to push left 
+	b) RPUSH key element [elements] : to push right
+	c) LPOP key [count] : to pop from left end from array
+	d) RPOP key [count] : to pop from right end from array
+
+11. SETS : unordered collection of unique strings
+    SADD key members 
+       Adds one or more members to a set 
+
+    SMEMBERS key
+       Gets all the members in a set
+
+    SPOP key
+       Removes and returns a random member from a set 
+
+       Eg- SADD myset "hello" 
+              (integer) 1 
+           SADD myset "foo" 
+              (integer) 1 
+           SADD myset "hello" 
+              (integer) 0
+           SADD myset "bar"
+              (integer) 1
+           SPOP myset 
+              "bar" 
+           SMEMBERS myset 
+              1) "hello" 
+              2) "foo"
+
+PostgreSQL
+  To create a Database - 
+     CREATE DATABASE {database_name};
+
+To delete a Database - 
+     DROP DATABASE {database_name};
+
+To connect with a Database - 
+     \c database_name
+
+
+To Create Table - 
+  CREATE TABLE table_name(
+	ID INT PRIMARY KEY SERIAL,
+	column_name1 data_type + constraints if any,
+	column_name2 data_type + constraints if any,
+	…,
+	…,
+	…
+	);
+
+To Delete Table -
+   DROP TABLE table_name;
